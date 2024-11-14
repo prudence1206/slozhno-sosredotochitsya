@@ -1,5 +1,26 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
+   display: grid;
+   background-image:url("../images/cover-image-dark.png");
+   background-position: center;
+   background-size: cover;
+   background-attachment: fixed;
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+}
+.header__theme-menu-list{
+   position: relative;
+   display: grid;
+   grid-template-rows: 1fr min-content 1fr;
+   justify-items: end;
+   align-items: center;
+   block-size: 100vh;
+   min-block-size: 668px;
+   padding: var(--main-gap);
+   font-size: var(--main-text-size);
+}
+
+@supports (block-size: 100dvb;) {
+   .header {
+      block-size: 100dvb;
+   }
 }
